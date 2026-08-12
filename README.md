@@ -1,4 +1,4 @@
-# AskHR — NeMo Guardrails + RAG
+# AskHR — RAG + Faiss + NeMo Guardrails + Evaluation + langsmith
 
 A production-style RAG assistant for internal HR policy questions, protected by **NVIDIA NeMo Guardrails** acting as a semantic security gate, with built-in **RAG quality evaluation** and **LangSmith tracing/monitoring**. Built with Streamlit, FAISS, and Groq.
 
