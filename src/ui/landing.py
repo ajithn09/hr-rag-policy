@@ -9,7 +9,7 @@ def render_landing() -> None:
     st.title("AskHR")
     st.info("Enter your Groq API key in the sidebar to begin.", icon="🔑")
     st.markdown("""
-**What this demo shows:**
+**What AskHR shows:**
 
 NeMo Guardrails acting as a semantic gate protecting a RAG pipeline — a common production pattern.
 
@@ -18,6 +18,7 @@ NeMo Guardrails acting as a semantic gate protecting a RAG pipeline — a common
 | **Input Rail (LLM ①)** | Guard model classifies intent — blocks off-topic, jailbreak, confidential requests, PII |
 | **FAISS RAG** | Finds the 3 most relevant HR policy chunks from the vector store |
 | **Answer (LLM ②)** | Chat model generates an answer grounded only in retrieved policy text |
+| **RAG Metrics** | scores the answer on faithfulness, relevancy, and context utilization — see the 📊 RAG Metrics tab |
 | **Output Rail** | Regex scan ensures no sensitive data leaked in the response |
 | **LangSmith** | Every stage above is traced end-to-end for monitoring and debugging |
 
