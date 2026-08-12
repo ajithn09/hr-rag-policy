@@ -18,11 +18,11 @@ if _ENV_GROQ_KEY == "your_groq_api_key_here":
 
 def render_sidebar() -> tuple:
     with st.sidebar:
-        st.title("🛡️ AskHR")
+        st.title("💬 AskHR")
         st.caption("RAG + NeMo Guardrails + FAISS  + Evaluation + LangSmith")
         st.divider()
 
-        st.subheader("🔑 API Key")
+        st.subheader("🔑 Bring Your Own Key")
         st.caption("Keys are used only for this session and never stored.")
 
         groq_key = st.text_input(
