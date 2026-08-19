@@ -62,8 +62,8 @@ def render_sidebar() -> tuple:
             ),
         )
 
-        if guard_model == "llama-3.1-8b-instant":
-            st.warning("8B models may miss subtle jailbreaks. 70B+ is recommended for the guard model.")
+        if guard_model == "openai/gpt-oss-20b":
+            st.warning("20B models may miss subtle jailbreaks. 120B is recommended for the guard model.")
 
         st.divider()
 

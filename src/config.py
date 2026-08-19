@@ -3,15 +3,13 @@ App-wide constants — models, prompts, and output-scan patterns.
 """
 
 GROQ_MODELS = {
-    "llama-3.3-70b-versatile": "Llama 3.3 · 70B  ★ recommended for guardrails",
-    "llama-3.1-8b-instant":    "Llama 3.1 · 8B  ★ fast & cheap",
-    "openai/gpt-oss-120b":     "OpenAI OSS · 120B  — strong reasoning",
-    "openai/gpt-oss-20b":      "OpenAI OSS · 20B  — fast",
+    "openai/gpt-oss-120b": "OpenAI OSS · 120B  ★ recommended for guardrails",
+    "openai/gpt-oss-20b":  "OpenAI OSS · 20B  ★ fast & cheap",
 }
 
 
-GUARD_MODEL_DEFAULT = "llama-3.3-70b-versatile"
-CHAT_MODEL_DEFAULT  = "llama-3.1-8b-instant"
+GUARD_MODEL_DEFAULT = "openai/gpt-oss-120b"
+CHAT_MODEL_DEFAULT  = "openai/gpt-oss-20b"
 
 HR_SYSTEM_PROMPT = (
     "You are AskHR, an internal HR policy assistant. "
